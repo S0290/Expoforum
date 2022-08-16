@@ -1,0 +1,412 @@
+@media (prefers-reduced-motion:no-preference){
+    :root{
+        scroll-behavior: smooth;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Circe';
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Plumb';
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 160%;
+    text-transform: uppercase;
+
+}
+
+h2,
+h3 {
+    font-weight: 500px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1110px;
+    width: 96%;
+}
+
+
+.first-screen,
+.form-search input,
+.first-screen a,
+.side-menu,
+.side-menu a,
+.footer,
+.footer a {
+    color: #FFFFFF;
+}
+ .link-new {
+
+    color: #FFC41E !important;
+
+}
+.link-underline{
+    text-decoration: underline;
+
+}
+.color-black{
+    color: #2E373B;
+}
+
+.block-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px; 
+}
+
+.link-more{
+position: relative;
+
+/* */
+}
+.link-more::after{
+    position: absolute;
+    right: -40px;
+    content: url('../images/Arrow.png');
+}
+
+.link-more-white{
+    position: relative;
+color: white;
+padding-right: 40px;
+}
+.link-more-white::after{
+    content: url(../images/white-arrow.png);
+    position: absolute;
+right: 0px;
+}
+/* ######################################## */
+
+/* .flex {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 50px auto;
+            display: flex;
+             Установить направление флексов
+            flex-direction: column;
+            Растоянние между флексами вдоль главной оси 
+            justify-content: space-around;
+Растоянние между флексами поперьок главной оси 
+align-items: center;
+        } */
+
+/*  .flex__item {
+            color: blue;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+
+.first-screen {
+    min-height: 800px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../images/bgc.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.header {
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    width: 100%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 47px;
+}
+
+.header__right-bar {
+    display: flex;
+    gap: 70px;
+}
+
+
+
+.form-search input {
+    background: transparent;
+    width: 150px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-left: 5px;
+    display: none;
+}
+
+.form-search__icon {
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url(../images/search.png);
+    background-position: center;
+}
+
+/*         .container {
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: 80px 1fr 100px;
+            grid-template-columns: 2fr 6fr 4fr;
+            gap: 10px;
+ } */
+
+
+.main__body {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main__lists {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 255px);
+    gap: 30px;
+    margin-bottom: 53px;
+}
+
+.main__item {
+    padding: 30px 40px;
+
+}
+.main__info{
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 533px;
+}
+
+.main__item_blue {
+    background: #2378FC;
+}
+
+.main__item_yellow {
+    background: #FFC41E;
+}
+
+.main__item_grey {
+    background: #30BCC9;
+}
+
+.main__item_red {
+    background: #F6404F;
+}
+
+.main__title {
+    margin-bottom: 15px;
+}
+
+/* #################################################### */
+
+
+.side-menu {
+    min-height: 426px;
+    background-color: #2378FC;
+}
+
+.side-menu__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.side-menu__title {
+    margin-bottom: 30px;
+}
+
+.side-menu__list li {
+    margin-bottom: 10px;
+}
+
+
+
+/* ##################################################*/
+
+
+.events {
+    min-height: 984px;
+    background-color: #FFC41E;
+
+}
+
+.events__content {}
+
+.events__head {
+    margin-bottom: 55px;
+}
+
+.events__body {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+}
+
+.events__date{
+    display: flex;
+    margin-top: 10px;
+   margin-bottom: 20px;
+
+}
+.events__title{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ 
+}
+
+.events__content .block-head{
+
+
+}
+
+/* ################################################## */
+
+
+.news {
+    min-height: 649px;
+    background-color: #FAF3E3;
+
+}
+
+.news__content {
+    display: flex;
+justify-content: space-between;
+}
+
+.news__advertisement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news__head {
+    margin-bottom: 30px;
+   
+}
+.news__item{
+   display: flex; 
+   gap: 30px;
+   align-items: center;
+}
+.news__body {
+
+}
+
+.news__info {
+   display: flex;
+   gap: 30px;
+   flex-direction: column;
+   
+}
+
+.news__date {
+    display: flex;
+    margin-bottom: 14px;
+}
+.news__article{
+  max-width: 340px; 
+}
+.news__img{
+    font-size: 0;
+}
+/* display: grid;
+grid-template-rows: repeat(3, auto);
+grid-template-columns: repeat(1, 385px);
+gap: 30px; */
+/* ######################################################### */
+.footer {
+    min-height: 476px;
+    background-color: #30BCC9;
+
+}
+.footer__content{
+display: flex;
+justify-content: space-between;
+
+}
+.footer__list>li {
+  margin-bottom: 10px;
+
+}
+
+.footer__title{
+ 
+    
+margin-bottom: 20px;
+}
+.footer__item{
+
+
+}
+.footer__media{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__text{
+    max-width: 255px;
+}
+/* ############################################## 
+display: grid;
+grid-template-rows: repeat(2, auto);
+grid-template-columns: repeat(4, auto);*/
