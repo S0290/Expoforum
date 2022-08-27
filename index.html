@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer ></script>
     <title>Document</title>
 
 </head>
@@ -32,8 +33,8 @@
             <div class="header__right-bar">
 
                 <form class="form-search">
-                    <input type="search" name="search" id="">
-                    <span class="form-search__icon"></span>
+                    <input  type="search" name="search" id="search-input">
+                    <span  class="form-search__icon" id="search-btn"></span>
                 </form>
                 <div>
                     <img src="./images/Globe.png" alt="lang">
@@ -48,7 +49,7 @@
             <div class="main__body">
                 <div>
                     <p class="main__info">конгрессно-выставочный центр <br> Санкт-Петербурга</p>
-                    <a class="main__about block-head__white" href="#">О комплексе</a>
+                    <a class="main__about link-more-white" href="#">О комплексе</a>
                 </div>
 
                 <div class="main__lists">
@@ -236,17 +237,18 @@
     </article>
     <footer class="footer wrap" id="footer">
         <div class="container footer__content">
-            <div>
-                <div class="footer__item">
+            <div class="footer__item">
+                
+                <div >
                     <h3 class="footer__title">О компании</h3>
                     <ul class="footer__list">
                         <li><a href="#" class="link-new link-underline">О нашей компании</a></li>
                         <li><a href="#">Вакансии</a></li>
                         <li><a href="#">Партнеры</a></li>
-                        <li><a href="#">Контакты"</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="footer__item">
+                <div>
                     <h3 class="footer__title">Организаторам</h3>
                     <ul class="footer__list">
                         <li><a href="">Преимущества площадки</a></li>
@@ -256,8 +258,8 @@
                     </ul>
                 </div>
             </div>
-            <div>
-                <div class="footer__item">
+            <div class="footer__item">
+                <div >
                     <h3 class="footer__title">Єкспонентам</h3>
                     <ul class="footer__list">
                         <li><a href=""> Общие условия участия</a></li>
@@ -266,7 +268,7 @@
                         <li><a href="">Забронировать гостиницу</a></li>
                     </ul>
                 </div>
-                <div class="footer__item">
+                <div >
                     <h3 class="footer__title">Посетителям</h3>
                     <ul class="footer__list">
                         <li><a href="">Сервисы</a></li>
@@ -277,8 +279,8 @@
                 </div>
             </div>
 
-            <div>
-                <div class="footer__item">
+            <div class="footer__item">
+                <div>
                     <h3 class="footer__title">Прессе</h3>
                     <ul class="footer__list">
                         <li><a href="">Аккредитация</a></li>
@@ -288,7 +290,7 @@
                 </div>
 
 
-                <div class="footer__item">
+                <div>
                     <h3 class="footer__title">Приложение</h3>
                     <ul class="footer__list">
                         <li><img src="./images/apple.png" alt=""></li>
@@ -297,8 +299,8 @@
                 </div>
             </div>
 
-            <div>
-                <div class="footer__item">
+            <div class="footer__item">
+                <div>
                     <h3 class="footer__title">Мы в соц. сетях</h3>
                     <ul class="footer__media">
                         <li> <a href="#"><img src="./images/youtube.png" alt=""></a></li>
@@ -310,15 +312,21 @@
                 <div class="footer__item">
 
                     <div>
-                        <form class="form-search">
+                        <div>
 
                             <h3 class="footer__title">Подписка на новости</h3>
                             <p class="footer__text">Получайте все самые последние новости о мероприятиях в Экспофоруме.
                             </p>
+
+                            </div>
                     </div>
+                    <form action="" class="form-subscribe">
+                        <input name="e-mail" placeholder="Введите ваш e-mail" class="form-subscribe__input" type="email">
+                        <input type="image" class="form-subscribe__image" src="./images/Vector.png">
                     </form>
 
                 </div>
+                
             </div>
 
 
